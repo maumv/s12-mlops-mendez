@@ -1,0 +1,3 @@
+# Librerías de la aplicación. Las del modelo (mlflow, scikit-learn, pandas...)
+# se instalan desde modelo/requirements.txt, que exporta MLflow en Colab.
+gradio==6.32.0

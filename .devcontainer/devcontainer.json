@@ -1,0 +1,13 @@
+{
+  "name": "S12 · Producción · Retención bancaria",
+  "image": "mcr.microsoft.com/devcontainers/python:3.13",
+  "postCreateCommand": "bash scripts/instalar.sh",
+  "forwardPorts": [7860],
+  "portsAttributes": {
+    "7860": { "label": "App del banco (hacer PÚBLICO)", "onAutoForward": "notify" }
+  },
+  "containerEnv": { "MLFLOW_DISABLE_AGENT_HINT": "1" },
+  "customizations": {
+    "vscode": { "extensions": ["ms-python.python"] }
+  }
+}
